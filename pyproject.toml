@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ai-agent-py-demos"
+version = "0.1.0"
+description = "python ai agent demos"
+authors = [
+    "joyang1<tingzai.yang@gmail.com>"
+]
+license = "Apache License"
+readme = "README.md"
+packages = [
+    { include = "AI_Agent_Py_Demos" }
+]
+
+[tool.poetry.dependencies]
+python="^3.12"
+langchain = "^0.3.25"
+fastapi = "^0.115.12"
+langserve = "^0.3.1"
+ollama = "^0.4.8"
+uvicorn = "^0.34.2"
+sse-starlette = "^2.3.3"
+langchain-ollama = "^0.3.2"
+langchain-community = "^0.3.23"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
